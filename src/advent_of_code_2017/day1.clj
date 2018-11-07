@@ -1,7 +1,5 @@
-(ns advent-of-code-2017.day1)
-
-(defn parse-int [str]
-  (Integer/parseInt str))
+(ns advent-of-code-2017.day1
+  (:require [advent-of-code-2017.shared :refer [parse-int]]))
 
 (defn matches-or-zero [[x y]]
   (if (= x y) x 0))
